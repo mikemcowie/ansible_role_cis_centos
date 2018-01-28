@@ -13,15 +13,15 @@
     - section1_level2
     - "1.1.2"
 
-- name: 1.1.2 - Ensure separate partition exists for /tmp (Scored)
-  debug: msg="***Manually create separete /tmp partition"
-  when: "tmp_mount.stdout and '/tmp' not in tmp_mount.stdout"
-  tags:
-    - section1
-    - level2
-    - scored
-    - section1_level2
-    - "1.1.2"
+#- name: 1.1.2 - Ensure separate partition exists for /tmp (Scored)
+#  debug: msg="***Manually create separete /tmp partition"
+#  when: "tmp_mount.stdout and '/tmp' not in tmp_mount.stdout"
+#  tags:
+#    - section1
+#    - level2
+#    - scored
+#    - section1_level2
+#    - "1.1.2"
 
 - name: 1.1.2 Ensure separate partition exists for /tmp (Scored)
   systemd:
